@@ -2,13 +2,9 @@
 
 @section('content')
 
-<h1>ID: {{ $task->id }} のタスク詳細ページ</h1>
+<h1>{{ $task->content }} の詳細ページ</h1>
 
 <table class="table table-bordered">
-  <tr>
-    <th>ID:</th>
-    <td>{{ $task->id }}</td>
-  </tr>
   <tr>
     <th>タスク:</th>
     <td>{{ $task->content }}</td>

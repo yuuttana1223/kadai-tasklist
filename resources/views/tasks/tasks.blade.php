@@ -1,10 +1,6 @@
-@extends('layouts.app')
-
-@section('content')
-
 <h1>タスク一覧</h1>
 
-@if (count($tasks) > 0)
+
 <table class="table tabel-striped">
   <thead>
     <tr>
@@ -21,8 +17,6 @@
     @endforeach
   </tbody>
 </table>
-@endif
+
 
 {!! link_to_route('tasks.create', '新規登録', [], ['class' => 'btn btn-primary']) !!}
-
-@endsection

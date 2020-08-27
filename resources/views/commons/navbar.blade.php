@@ -11,7 +11,7 @@
       <ul class="navbar-nav">
         @if (Auth::check())
           <li class="nav-item">{!! link_to_route('tasks.create', '新規タスクの登録', [], ['class' => 'nav-link']) !!}</li>
-          <li class="nab-item">{!! link_to_route('logout.get', 'ログアウト') !!}</li>
+          <li class="nab-item">{!! link_to_route('logout.get', 'ログアウト', [], ['class' => 'nav-link']) !!}</li>
         @else
           <li class="nav-item">{!! link_to_route('signup.get', '新規会員登録', [], ['class' => 'nav-link']) !!}</li>
           <li class="nav-item">{!! link_to_route('login', 'ログイン', [], ['class' => 'nav-link']) !!}</li>
